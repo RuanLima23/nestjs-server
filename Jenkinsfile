@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    environment {
+        PATH = "%PATH%;C:\Program Files\nodejs\node_modules\npm\bin"
+    }
+
     stages {
         stage('checkout') {
             steps {
